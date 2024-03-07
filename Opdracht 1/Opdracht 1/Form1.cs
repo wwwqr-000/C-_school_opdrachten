@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Opdracht_1 {
     public partial class Form1 : Form {
+
+        List<string> klasgenoten = new List<string>();
         public Form1() {
             InitializeComponent();
         }
@@ -35,7 +37,9 @@ namespace Opdracht_1 {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            
+            string name = naam.Text;
+            //string 
+            MessageBox.Show(name);
         }
     }
 }
