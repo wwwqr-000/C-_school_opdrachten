@@ -27,19 +27,18 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.overzicht = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.naam = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.naam = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +79,6 @@
             this.tabPage2.Controls.Add(this.radioButton5);
             this.tabPage2.Controls.Add(this.radioButton1);
             this.tabPage2.Controls.Add(this.radioButton2);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.radioButton3);
             this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.radioButton4);
@@ -99,60 +97,16 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // label2
+            // radioButton5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(389, 36);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "vul hieronder je gegevens in";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Wat is je naam?";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Hoeveel fruit eet je per dag?";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 192);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Hoeveel sport je in de week?";
-            // 
-            // naam
-            // 
-            this.naam.Location = new System.Drawing.Point(259, 111);
-            this.naam.Name = "naam";
-            this.naam.Size = new System.Drawing.Size(214, 22);
-            this.naam.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(320, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(431, 150);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(42, 20);
+            this.radioButton5.TabIndex = 12;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = ">3";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
@@ -187,6 +141,14 @@
             this.radioButton3.Text = "2";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(259, 192);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(214, 24);
+            this.comboBox1.TabIndex = 14;
+            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -198,33 +160,60 @@
             this.radioButton4.Text = "3";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // button1
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(431, 150);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(42, 20);
-            this.radioButton5.TabIndex = 12;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = ">3";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.Location = new System.Drawing.Point(320, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // naam
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(259, 192);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 24);
-            this.comboBox1.TabIndex = 14;
+            this.naam.Location = new System.Drawing.Point(259, 111);
+            this.naam.Name = "naam";
+            this.naam.Size = new System.Drawing.Size(214, 22);
+            this.naam.TabIndex = 4;
             // 
-            // groupBox1
+            // label5
             // 
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Hoeveel sport je in de week?";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 150);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(175, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Hoeveel fruit eet je per dag?";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Wat is je naam?";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(389, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "vul hieronder je gegevens in";
             // 
             // Form1
             // 
@@ -261,7 +250,6 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }
