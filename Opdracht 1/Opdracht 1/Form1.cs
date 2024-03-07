@@ -13,9 +13,15 @@ namespace Opdracht_1 {
     public partial class Form1 : Form {
 
         List<string> klasgenoten = new List<string>();
+
+
         public Form1() {
             InitializeComponent();
         }
+
+        public static string connString = @"Server=GAMING-LAPTOP-W\SQLEXPRESS;Initial Catalog=opdracht_1;Persist Security Info=False;Integrated Security=true;MultipleActiveResultSets=True;Encrypt=false;TrustServerCertificate=true;Connection Timeout=30";
+
+        public SqlConnection cnn = new SqlConnection(connString);
 
         private void Form1_Load(object sender, EventArgs e) {
 
@@ -39,8 +45,21 @@ namespace Opdracht_1 {
 
         private void button1_Click(object sender, EventArgs e) {
             string name = naam.Text;
-            //string
-            MessageBox.Show(name);
+            
+
+            try {
+                cnn.Open();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Oof!" + ex);
+                return;
+            }
+
+            string sql = "INSERT INTO Table_1(name, aantal_fruit, week_sport) VALUES ('" + name + "', 1, 1)";
+
+            SqlCommand Insert = new SqlCommand(sql, cnn);
+            Insert.ExecuteNonQuery();
+            cnn.Close();
         }
     }
 }

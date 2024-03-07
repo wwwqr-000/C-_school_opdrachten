@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\opdracht 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|solutionrelative:opdracht 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|c:\\users\\za2qa\\desktop\\background-apps\\school_22sd\\sd\\c#\\lessen\\git\\c-_school_opdrachten\\opdracht 1\\opdracht 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|solutionrelative:opdracht 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Program.cs",
+              "RelativeDocumentMoniker": "Opdracht 1\\Program.cs",
+              "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Program.cs",
+              "RelativeToolTip": "Opdracht 1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T10:39:48.523Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "Opdracht 1\\Form1.cs",
               "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Form1.cs",
               "RelativeToolTip": "Opdracht 1\\Form1.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCgAAAAkAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswDsAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T08:36:41.736Z",
               "EditorCaption": ""
