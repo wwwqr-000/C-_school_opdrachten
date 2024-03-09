@@ -45,7 +45,8 @@ namespace Opdracht_1 {
 
         private void button1_Click(object sender, EventArgs e) {
             string name = naam.Text;
-            
+
+
 
             try {
                 cnn.Open();
@@ -60,6 +61,30 @@ namespace Opdracht_1 {
             SqlCommand Insert = new SqlCommand(sql, cnn);
             Insert.ExecuteNonQuery();
             cnn.Close();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e) {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e) {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e) {
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e) {
+
         }
     }
 }

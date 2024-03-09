@@ -28,7 +28,6 @@
             this.overzicht = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -39,11 +38,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.radioBox = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
-            this.overzicht.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.radioBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +67,6 @@
             // 
             // overzicht
             // 
-            this.overzicht.Controls.Add(this.dataGridView1);
             this.overzicht.Location = new System.Drawing.Point(4, 25);
             this.overzicht.Name = "overzicht";
             this.overzicht.Padding = new System.Windows.Forms.Padding(3);
@@ -80,12 +77,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.radioButton5);
-            this.tabPage2.Controls.Add(this.radioButton1);
-            this.tabPage2.Controls.Add(this.radioButton2);
-            this.tabPage2.Controls.Add(this.radioButton3);
+            this.tabPage2.Controls.Add(this.radioBox);
             this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.radioButton4);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.naam);
             this.tabPage2.Controls.Add(this.label5);
@@ -104,29 +97,19 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(431, 150);
+            this.radioButton5.Location = new System.Drawing.Point(150, 21);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(42, 20);
+            this.radioButton5.Size = new System.Drawing.Size(35, 20);
             this.radioButton5.TabIndex = 12;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = ">3";
+            this.radioButton5.Text = "4";
             this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(259, 150);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 20);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "<1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(308, 150);
+            this.radioButton2.Location = new System.Drawing.Point(15, 21);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(35, 20);
             this.radioButton2.TabIndex = 9;
@@ -137,7 +120,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(349, 150);
+            this.radioButton3.Location = new System.Drawing.Point(65, 21);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(35, 20);
             this.radioButton3.TabIndex = 10;
@@ -148,6 +131,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1 keer",
+            "2 keer",
+            "3 keer",
+            "4 keer"});
             this.comboBox1.Location = new System.Drawing.Point(259, 192);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(214, 24);
@@ -156,22 +144,23 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(390, 150);
+            this.radioButton4.Location = new System.Drawing.Point(106, 21);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(35, 20);
             this.radioButton4.TabIndex = 11;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "3";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(320, 306);
+            this.button1.Location = new System.Drawing.Point(259, 254);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(214, 42);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
+            this.button1.Text = "Verzenden";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -219,14 +208,18 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "vul hieronder je gegevens in";
             // 
-            // dataGridView1
+            // radioBox
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(433, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.radioBox.Controls.Add(this.radioButton3);
+            this.radioBox.Controls.Add(this.radioButton5);
+            this.radioBox.Controls.Add(this.radioButton2);
+            this.radioBox.Controls.Add(this.radioButton4);
+            this.radioBox.Location = new System.Drawing.Point(259, 139);
+            this.radioBox.Name = "radioBox";
+            this.radioBox.Size = new System.Drawing.Size(214, 49);
+            this.radioBox.TabIndex = 15;
+            this.radioBox.TabStop = false;
+            this.radioBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Form1
             // 
@@ -239,10 +232,10 @@
             this.Text = "Leefstijl onderzoek";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.overzicht.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.radioBox.ResumeLayout(false);
+            this.radioBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,12 +254,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox radioBox;
     }
 }
 
