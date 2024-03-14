@@ -1,0 +1,10 @@
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\bin\Release\Opdracht 1.exe.config
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\bin\Release\Opdracht 1.exe
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\bin\Release\Opdracht 1.pdb
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht 1.csproj.AssemblyReference.cache
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht_1.Form1.resources
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht_1.Properties.Resources.resources
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht 1.csproj.GenerateResource.cache
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht 1.csproj.CoreCompileInputs.cache
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht 1.exe
+C:\Users\za2qa\Desktop\background-apps\school_22SD\SD\C#\lessen\git\C-_school_opdrachten\Opdracht 1\Opdracht 1\obj\Release\Opdracht 1.pdb

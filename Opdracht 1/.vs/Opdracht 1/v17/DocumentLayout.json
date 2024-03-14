@@ -13,6 +13,16 @@
     {
       "AbsoluteMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\opdracht 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|solutionrelative:opdracht 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|c:\\users\\za2qa\\desktop\\background-apps\\school_22sd\\sd\\c#\\lessen\\git\\c-_school_opdrachten\\opdracht 1\\opdracht 1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|solutionrelative:opdracht 1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Opdracht 1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B19064-135B-4F34-B192-C6A94E7A57CD}|Opdracht 1\\Opdracht 1.csproj|c:\\users\\za2qa\\desktop\\background-apps\\school_22sd\\sd\\c#\\lessen\\git\\c-_school_opdrachten\\opdracht 1\\opdracht 1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +32,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Opdracht 1",
+              "DocumentMoniker": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Opdracht 1.csproj",
+              "RelativeDocumentMoniker": "Opdracht 1\\Opdracht 1.csproj",
+              "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Opdracht 1.csproj",
+              "RelativeToolTip": "Opdracht 1\\Opdracht 1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-14T09:50:26.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Opdracht 1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Form1.Designer.cs",
+              "RelativeToolTip": "Opdracht 1\\Form1.Designer.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAYwBgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:30:25.175Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -34,7 +69,8 @@
               "RelativeToolTip": "Opdracht 1\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T10:39:48.523Z"
+              "WhenOpened": "2024-03-07T10:39:48.523Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +80,7 @@
               "RelativeDocumentMoniker": "Opdracht 1\\Form1.cs",
               "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Form1.cs",
               "RelativeToolTip": "Opdracht 1\\Form1.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwCkAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T08:36:41.736Z",
               "EditorCaption": ""
@@ -58,7 +94,8 @@
               "ToolTip": "C:\\Users\\za2qa\\Desktop\\background-apps\\school_22SD\\SD\\C#\\lessen\\git\\C-_school_opdrachten\\Opdracht 1\\Opdracht 1\\Form1.cs [Design]",
               "RelativeToolTip": "Opdracht 1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T08:36:37.4Z"
+              "WhenOpened": "2024-03-07T08:36:37.4Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

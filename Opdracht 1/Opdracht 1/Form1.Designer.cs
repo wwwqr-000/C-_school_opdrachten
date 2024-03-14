@@ -24,22 +24,26 @@
         /// </summary>
         private void InitializeComponent() {
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlMain = new System.Windows.Forms.TabControl();
             this.overzicht = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.radioBox = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.naam = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioBox = new System.Windows.Forms.GroupBox();
-            this.tabControl1.SuspendLayout();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.aantalDeelnemerslabel = new System.Windows.Forms.Label();
+            this.tabControlMain.SuspendLayout();
+            this.overzicht.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.radioBox.SuspendLayout();
             this.SuspendLayout();
@@ -55,18 +59,21 @@
             this.label1.Text = "Onderzoek gezondheid medestudenten";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // tabControl1
+            // tabControlMain
             // 
-            this.tabControl1.Controls.Add(this.overzicht);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 66);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(659, 361);
-            this.tabControl1.TabIndex = 1;
+            this.tabControlMain.Controls.Add(this.overzicht);
+            this.tabControlMain.Controls.Add(this.tabPage2);
+            this.tabControlMain.Location = new System.Drawing.Point(12, 66);
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(659, 361);
+            this.tabControlMain.TabIndex = 1;
             // 
             // overzicht
             // 
+            this.overzicht.Controls.Add(this.aantalDeelnemerslabel);
+            this.overzicht.Controls.Add(this.label7);
+            this.overzicht.Controls.Add(this.label6);
             this.overzicht.Location = new System.Drawing.Point(4, 25);
             this.overzicht.Name = "overzicht";
             this.overzicht.Padding = new System.Windows.Forms.Padding(3);
@@ -74,6 +81,7 @@
             this.overzicht.TabIndex = 0;
             this.overzicht.Text = "overzicht";
             this.overzicht.UseVisualStyleBackColor = true;
+            this.overzicht.Click += new System.EventHandler(this.overzicht_Click);
             // 
             // tabPage2
             // 
@@ -93,6 +101,30 @@
             this.tabPage2.Text = "deelname";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // radioBox
+            // 
+            this.radioBox.Controls.Add(this.radioButton3);
+            this.radioBox.Controls.Add(this.radioButton5);
+            this.radioBox.Controls.Add(this.radioButton2);
+            this.radioBox.Controls.Add(this.radioButton4);
+            this.radioBox.Location = new System.Drawing.Point(259, 139);
+            this.radioBox.Name = "radioBox";
+            this.radioBox.Size = new System.Drawing.Size(214, 49);
+            this.radioBox.TabIndex = 15;
+            this.radioBox.TabStop = false;
+            this.radioBox.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(65, 21);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(35, 20);
+            this.radioButton3.TabIndex = 10;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "2";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
@@ -117,16 +149,17 @@
             this.radioButton2.Text = "1";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton4
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(65, 21);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(35, 20);
-            this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "2";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(106, 21);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(35, 20);
+            this.radioButton4.TabIndex = 11;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "3";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // comboBox1
             // 
@@ -140,18 +173,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(214, 24);
             this.comboBox1.TabIndex = 14;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(106, 21);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(35, 20);
-            this.radioButton4.TabIndex = 11;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "3";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // button1
             // 
@@ -208,30 +229,51 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "vul hieronder je gegevens in";
             // 
-            // radioBox
+            // label6
             // 
-            this.radioBox.Controls.Add(this.radioButton3);
-            this.radioBox.Controls.Add(this.radioButton5);
-            this.radioBox.Controls.Add(this.radioButton2);
-            this.radioBox.Controls.Add(this.radioButton4);
-            this.radioBox.Location = new System.Drawing.Point(259, 139);
-            this.radioBox.Name = "radioBox";
-            this.radioBox.Size = new System.Drawing.Size(214, 49);
-            this.radioBox.TabIndex = 15;
-            this.radioBox.TabStop = false;
-            this.radioBox.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(185, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Overzicht resultaten";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 18);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Aantal deelnemers:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // aantalDeelnemerslabel
+            // 
+            this.aantalDeelnemerslabel.AutoSize = true;
+            this.aantalDeelnemerslabel.Location = new System.Drawing.Point(155, 51);
+            this.aantalDeelnemerslabel.Name = "aantalDeelnemerslabel";
+            this.aantalDeelnemerslabel.Size = new System.Drawing.Size(14, 16);
+            this.aantalDeelnemerslabel.TabIndex = 2;
+            this.aantalDeelnemerslabel.Text = "0";
+            this.aantalDeelnemerslabel.Click += new System.EventHandler(this.label8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Leefstijl onderzoek";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlMain.ResumeLayout(false);
+            this.overzicht.ResumeLayout(false);
+            this.overzicht.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.radioBox.ResumeLayout(false);
@@ -244,7 +286,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage overzicht;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox naam;
@@ -259,6 +301,9 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox radioBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label aantalDeelnemerslabel;
     }
 }
 
